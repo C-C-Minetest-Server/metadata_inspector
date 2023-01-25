@@ -82,9 +82,9 @@ local my_gui = flow.make_gui(function(player, ctx)
 
 	return gui.VBox {
 		gui.label { label = S("Editing metadata of node at @1",minetest.pos_to_string(pos))},
-		gui.Box{w = 1, h = 0.05, color = "grey", padding = 0.25},
+		gui.Box{w = 1, h = 0.05, color = "grey", padding = 0},
 		gui.ScrollableVBox(svbox_content),
-		gui.Box{w = 1, h = 0.05, color = "grey", padding = 0.25},
+		gui.Box{w = 1, h = 0.05, color = "grey", padding = 0},
 		gui.HBox {
 			gui.Label {
 				label = ctx.msg or S("Ready"),
