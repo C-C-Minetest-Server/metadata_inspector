@@ -67,7 +67,7 @@ local my_gui = flow.make_gui(function(player, ctx)
 		},
 		gui.Button{
 			label = "+",
-			h = 1, w = 1,expand=true,align_h = "left",
+			h = 1, w = 1,expand=true,align_h = "left",align_v = "bottom",
 			on_event = function(player,ctx)
 				update_cache(player,ctx)
 				if not ctx.form.inewname or ctx.form.inewname == "" then return end
